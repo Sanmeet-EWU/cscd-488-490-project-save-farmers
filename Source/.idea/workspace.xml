@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca5885cb-6c3f-4361-8983-f1cc6ff80b58" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/CopilotIndices/17.13.430.18484/CodeChunks.db" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/CopilotIndices/17.13.430.18484/CodeChunks.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/CopilotIndices/17.13.430.18484/CodeChunks.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/CopilotIndices/17.13.430.18484/CodeChunks.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/CopilotIndices/17.13.430.18484/CodeChunks.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/CopilotIndices/17.13.430.18484/CodeChunks.db-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/CopilotIndices/17.13.430.18484/SemanticSymbols.db" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/CopilotIndices/17.13.430.18484/SemanticSymbols.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/CopilotIndices/17.13.430.18484/SemanticSymbols.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/CopilotIndices/17.13.430.18484/SemanticSymbols.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/CopilotIndices/17.13.430.18484/SemanticSymbols.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/CopilotIndices/17.13.430.18484/SemanticSymbols.db-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/FileContentIndex/069b1079-b5db-48e0-be96-d17099b5b12a.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/FileContentIndex/b4812ce2-6647-4a03-af3e-b08f3c8a584c.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/FileContentIndex/b811371e-a486-4d08-a78c-45186e6458cb.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/FileContentIndex/c0096c20-0824-4bfe-aaf3-68cae4e66caa.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/.vs/FarmerAPI/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/ProjectEvaluation/farmerapi.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/.vs/ProjectEvaluation/farmerapi.metadata.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/ProjectEvaluation/farmerapi.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/.vs/ProjectEvaluation/farmerapi.projects.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/.vs/ProjectEvaluation/farmerapi.strings.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/.vs/ProjectEvaluation/farmerapi.strings.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/bin/Debug/net8.0/FarmerAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/bin/Debug/net8.0/FarmerAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/bin/Debug/net8.0/FarmerAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/bin/Debug/net8.0/FarmerAPI.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/bin/Debug/net8.0/FarmerAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/bin/Debug/net8.0/FarmerAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/EndpointInfo/FarmerAPI.json" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/EndpointInfo/FarmerAPI.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/FarmerAPI.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/ref/FarmerAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/ref/FarmerAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/refint/FarmerAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/Debug/net8.0/refint/FarmerAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/FarmerAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/FarmerAPI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/FarmerAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/FarmerAPI.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FarmerAPI/FarmerAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/savefarmer/android/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/savefarmer/android/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/savefarmer/android/app/capacitor.build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/savefarmer/android/app/capacitor.build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/savefarmer/android/capacitor.settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/savefarmer/android/capacitor.settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/savefarmer/src/pages/ManageUsers.vue" beforeDir="false" afterPath="$PROJECT_DIR$/savefarmer/src/pages/ManageUsers.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/savefarmer/src/pages/Profile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/savefarmer/src/pages/Profile.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2p7y0eZB5ptenpZ1wEfqQAHkWDO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/nickb/Desktop/cscd-488-490-project-save-farmers/Source/savefarmer"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca5885cb-6c3f-4361-8983-f1cc6ff80b58" name="Changes" comment="" />
+      <created>1732131187868</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732131187868</updated>
+    </task>
+    <servers />
+  </component>
+</project>
