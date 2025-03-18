@@ -1,128 +1,152 @@
-# Getting Started
-## Tools Using
-1. Visual Studio Code
-2. Ionic
-3. Vue
-4. TypeScript
----
+# SaveFarmers Developer Documentation
 
-## Dev Install Instructions
+## Tools Used
+- Visual Studio Code
+- Ionic
+- Vue
+- TypeScript
+- Visual Studio
+- Azure
+- Android Studio
+- Xcode
 
-1. Install Node.js [Here](https://nodejs.org/en)  
-2. Install Android Studio [Here](https://developer.android.com/studio?gad_source=1&gbraid=0AAAAAC-IOZlMfeQAjLmqKrspCVlYU7fr4&gclid=Cj0KCQiA88a5BhDPARIsAFj595jUz8aGqI65fDdK3ZpqDA1pz140tnzHJ69qZ4B3gZL4gsL5vVhV9B0aAnkaEALw_wcB&gclsrc=aw.ds)   (Optional, this for running an Android emulator)
+## Development Installation Instructions
+1. Install Node.js [Download here](https://nodejs.org/en)
+2. Install Android Studio [Download here](https://developer.android.com/studio) (Optional, for running an Android emulator)
+3. Install XCode [Download here](https://developer.apple.com/xcode/) (Optional, for running iOS emulator. Requires a Mac)
 
-### Command Line Setup
-
-1. Open the command prompt and enter the following commands:
-   - **Install Vue**  
-     ```bash
-     npm install -g @vue/cli
-     ```
-
-   - **Install Ionic and Capacitor**  
-     ```bash
-     npm install -g @ionic/cli @capacitor/assets
-     ```
-
-2. Navigate to the desired directory:
-   - **Clone the repository**  
-     ```bash
-     git clone https://github.com/Sanmeet-EWU/cscd-488-490-project-save-farmers/tree/main/Source/savefarmer.git savefarmer
-     ```
-
-   - **Change to the project directory and run the app**  
-     ```bash
-     cd savefarmer && npm install && ionic serve
-     ```
-
-   *(This command should open the app in your browser. If it doesn't, ensure Vue and Ionic are installed correctly.)*
-
-
-### Code Editing
-
-You can now open the **entire folder** with a code editor such as VS Code (make sure to have the Vue, TypeScript, and Ionic extensions installed) to edit the code within the `src` folder.
-
-### Third Party Plugins
-The following are third party plugins that you will need to run the app:
-- **Chart.js**  
-     ```bash
-     npm install chart.js
-     ```
-- **chartjs-plugin-datalabels**  
-     ```bash
-     npm install chartjs-plugin-datalabels
-     ```
-     OR
-     ```bash
-     yarn add chartjs-plugin-datalabels
-     ```
----
-
-# Emulator Instructions
-
-1. In the project terminal, run the following commands:  
-   *Ensure Android Studio is installed and open during the first run to build properly.*
-   - **Add Capacitor Android files**  
-     ```bash
-     ionic cap add android
-     ```
-
-   - **Build Android**  
-     ```bash
-     ionic cap build android
-     ```
-     *(This should open Android Studio and build the emulator)*
-
-   - **Run the Emulator**  
-     ```bash
-     ionic cap run
-     ```
-     *(This should launch the emulator. Note: It may take some time.)*
-
---- 
-## Cypress Testing Instructions
-
-### Prerequisites:
-1. Verify Cypress is installed:
-    ```bash  
-    npm install cypress
-    ```
-2. Ensure that the development server is running before starting Cypress:
-   ```bash
-   npm run dev
+## Command Line Setup
+1. Open the command prompt and run the following commands:
+   ```sh
+   npm install --global yarn
+   yarn global add @vue/cli
+   yarn global add -g @ionic/cli @capacitor/assets
    ```
-By default, this serves the app at http://localhost:5173. You can change the base port in cypress.config.ts to match your local machine.
+2. Navigate to the desired directory and clone the repository:
+   ```sh
+   git clone https://github.com/Sanmeet-EWU/cscd-488-490-project-save-farmers/
+   cd savefarmer && yarn install && ionic serve
+   ```
 
-3. Run tests with Cypress:
-    ```bash
-    npm run test:e2e
-    ```
-4. Navigate to navigation.spec.ts to modify/view tests:
+## Code Editing
+Open the entire folder in Visual Studio Code. Ensure you have the Vue, TypeScript, and Ionic extensions installed to edit the code within the `src` folder.
 
-    ```bash
-    cd savefarmer/tests/e2e/specs/navigation.spec.ts
-    ```
+## Third-Party Plugins
+The following plugins are required to run the app:
+```sh
+npm install chart.js
+npm install chartjs-plugin-datalabels
+```
+or
+```sh
+yarn add chartjs-plugin-datalabels
+```
 
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ixLrLXsm)
+## Emulator Instructions
+### Android
+Ensure Android Studio is installed and open during the first run to build properly.
+```sh
+ionic cap add android
+ionic cap build android
+ionic cap run
+```
 
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=16315825)
+### iOS
+Ensure you are using a Mac and have Xcode installed.
+```sh
+ionic cap add ios
+ionic cap build ios
+```
+Open Xcode:
+```sh
+open .cscd-488-490-project-save-farmers/Source/savefarmer/ios/App
+```
+Build the app by selecting a device and clicking the play button.
 
-## Database Setup (Sqlite with Capacitor):
+## Frontend Structure
+- **router folder**: Configures app routing.
+- **script folder**: Handles post functionality and user settings.
+- **App.vue**: Root file containing navigation elements.
+- **main.ts**: Entry point and configurations.
+- **page folder**: Contains website pages.
+- **component folder**: Modular components for reusability.
 
-You can find all the information at this [Github](https://github.com/capacitor-community/sqlite) and in this [VIDEO](https://www.youtube.com/watch?v=z3K2HLh1G_I)
+## Database Setup
+Navigate to the backend directory:
+```sh
+cd Source/FarmerAPI
+```
+Open the `FarmerAPI.sln` file in Visual Studio. Run the following commands to generate the database locally:
+```sh
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+```
 
-1. Install Capacitor:
-    ```bash  
-    npm run build  
-    npm install --save @capacitor-community/sqlite
-    npx cap sync
-    ```
+## API Endpoints
+### AuthController
+- `POST /api/register` - Register a new user (Anonymous)
+- `POST /api/login` - Login (Anonymous)
+- `GET /api/user/{id}` - Get user by ID (Authorized)
+- `POST /api/refresh-token` - Refresh token (Anonymous)
+- `POST /api/revoke-refresh-token` - Revoke refresh token (Authorized)
+- `GET /api/current-user` - Get current user details (Authorized)
+- `DELETE /api/user/{id}` - Delete a user (Authorized)
+- `GET /api/GetAllUsers` - Retrieve all users (Authorized)
+- `POST /api/change-password` - Change user password (Authorized)
 
-2. Install Capacitor (Option #2);
-    ```
-    npm install --global yarn
-    yarn add @capacitor-community/sqlite
-    npx cap sync
-    ```
+### PostController
+- `POST /api/posts` - Create a post (Authorized)
+- `GET /api/posts` - Get all posts (Anonymous)
+- `GET /api/posts/analytic` - Get post analytics (Authorized)
+- `GET /api/posts/user/{userId}` - Get posts by user ID (Authorized)
+- `PUT /api/posts/{postId}` - Update a post (Authorized)
+- `DELETE /api/posts/{postId}` - Delete a post (Authorized)
 
+## Backend Structure
+- **Controller folder**: API controllers for frontend interactions.
+- **Domain/Entities folder**: Database entity definitions.
+- **Domain/Contracts folder**: Request and response models.
+- **Extensions folder**: JWT settings and error handling.
+- **Infrastructure/Context folder**: Database setup.
+- **Infrastructure/Mapping folder**: Maps response models to database entities.
+- **Service folder**: Contains core database logic.
+- **appsettings.json**: Stores settings for deployment and database.
+- **Program.cs**: Configures API build settings.
 
+## Deployment
+### Frontend Deployment (Azure)
+1. Fork the project on GitHub.
+2. Create a Static Web App resource in Azure.
+3. Select GitHub as the deployment source.
+4. Link the project repository.
+5. Select Vue.js as the build preset.
+6. Set the app location to `./Source/savefarmer`.
+7. Click **Create** to deploy.
+
+### Backend Deployment (API on Azure)
+1. Open the API project in Visual Studio.
+2. Right-click and select **Publish**.
+3. Choose **Azure App Service (Windows)**.
+4. Create a new App Service and click **Finish**.
+5. Configure the database connection:
+   ```sh
+   CREATE USER [YourAppServiceName] FROM EXTERNAL PROVIDER;
+   ALTER ROLE db_owner ADD MEMBER [YourAppServiceName];
+   ```
+6. Set environment variables in Azure:
+   - **Name**: `JwtSetting__Key`
+   - **Value**: `ThisIsA32CharactersLongSecretKeyEXL`
+
+## Known Issues and Future Enhancements
+### Known Bugs
+- User deletion does not remove associated posts.
+- Cypress is deprecated due to frontend conflicts.
+
+### Future Enhancements
+- Implement a secure transaction system.
+- Develop a real-time chat feature.
+- Add a loading page between API requests.
+- Introduce automated backend testing.
+
+---
+[GitHub Repository](https://github.com/Sanmeet-EWU/cscd-488-490-project-save-farmers/)
