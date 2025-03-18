@@ -1,4 +1,4 @@
-# SaveFarmers Developer Documentation
+# Getting Started
 
 ## Tools Used
 - Visual Studio Code
@@ -148,5 +148,7 @@ dotnet ef database update
 - Add a loading page between API requests.
 - Introduce automated backend testing.
 
+---
+[For more inforamtion](SaveFarmers_Developer_Documentation.pdf)
 ---
 [GitHub Repository](https://github.com/Sanmeet-EWU/cscd-488-490-project-save-farmers/)
