@@ -82,7 +82,7 @@
       }
   
       axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-      const response = await axios.get<UserAnalytics>(`https://localhost:7170/api/posts/analytic`);
+      const response = await axios.get<UserAnalytics>(`https://farmerapi20250306133102-b8ejbnf8c4a0hve5.westus-01.azurewebsites.net/api/posts/analytic`);
       userData.value = response.data;
     } catch (error: any) {
       console.error('Error fetching user analytics:', error.message);

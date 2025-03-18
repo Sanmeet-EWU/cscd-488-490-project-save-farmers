@@ -43,7 +43,7 @@ export default class GetUserPostService {
 
       const uIds = await getUser();
       console.log(uIds);
-      const uIdurl = `https://localhost:7170/api/posts/user/${uIds}`;
+      const uIdurl = `https://farmerapi20250306133102-b8ejbnf8c4a0hve5.westus-01.azurewebsites.net/api/posts/user/${uIds}`;
       console.log(uIdurl);
 
       const response = await axios.get(uIdurl);
@@ -64,7 +64,7 @@ export default class GetUserPostService {
 
   async EditCurrentPost(post : any): Promise<void> {
     try {
-      const response = await axios.put(`https://localhost:7170/api/posts/${post.postID}`, {
+      const response = await axios.put(`https://farmerapi20250306133102-b8ejbnf8c4a0hve5.westus-01.azurewebsites.net/api/posts/${post.postID}`, {
         title: post.title,
         price: post.price,
         cropType: post.cropType,
@@ -116,7 +116,7 @@ export default class GetUserPostService {
       // axios.defaults.headers.common['Authorization'] = `Bearer ${acTo}`;
       console.log(post);
 
-      const response = await axios.post("https://localhost:7170/api/posts", {
+      const response = await axios.post("https://farmerapi20250306133102-b8ejbnf8c4a0hve5.westus-01.azurewebsites.net/api/posts", {
         title: post.title,
         price: post.price,
         cropType: post.cropType,

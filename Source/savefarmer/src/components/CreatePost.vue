@@ -58,12 +58,13 @@
 
         <ion-item>
           <ion-label position="stacked">Post duration (Expire at 12AM GMT Time)</ion-label>
-          <ion-select :value="7" interface="popover" v-model="newPost.expireDate" required>
-            <ion-select-option :value="3">3 days</ion-select-option>
-            <ion-select-option :value="7">7 days</ion-select-option>
-            <ion-select-option :value="12">12 days</ion-select-option>
-            <ion-select-option :value="30">30 days</ion-select-option>
-          </ion-select>
+          <ion-datetime
+            display-format="YYYY-MM-DD"
+            v-model="newPost.expireDate"
+            :min="minDate"
+            :max="maxDate"
+            required
+          ></ion-datetime>
         </ion-item>
 
         <ion-button expand="full" type="submit" class="ion-margin-top"
@@ -92,6 +93,7 @@ import {
 } from "@ionic/vue";
 import { ref } from "vue";
 import { postSer } from "@/scripts/PostService";
+import { time } from "ionicons/icons";
 
 // Props to control modal open state from parent component
 const props = defineProps({
@@ -108,6 +110,16 @@ const handleClose = () => {
   emit("update:isOpen", false);
 };
 
+const getCurrentDate = () => {
+  const today = new Date();
+  const tomorrow = new Date(today);
+  tomorrow.setDate(today.getDate() + 1);
+  return tomorrow.toISOString().split("T")[0];
+};
+
+const minDate = getCurrentDate();
+const maxDate = new Date(new Date().setDate(new Date().getDate() + 30)).toISOString().split("T")[0];
+
 const newPost : any = ref({
   //placeholder so i dont have to retype everything a million times
   title: "Placeholder",
@@ -117,14 +129,14 @@ const newPost : any = ref({
   location: "My House",
   contact: "0000000000",
   description: "qwe",
-  expireDate: 7,
+  expireDate: minDate,
   name: sessionStorage.getItem('Email'), //should be autofill from database or not? idk
   status: "Active",
   userId: sessionStorage.getItem('Id'), //this should be replace by database info but cant leave blank for now
 });
 
-const handleSubmit = () => {
-  postSer.createPost(newPost.value);
+const handleSubmit = async () => {
+  await postSer.createPost(newPost.value);
   handleClose();
   window.location.reload();
 };

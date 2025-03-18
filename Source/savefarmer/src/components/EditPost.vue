@@ -162,8 +162,8 @@ const formatDate = (dateString: string): string => {
   { immediate: true } // Ensure it's updated immediately after initial render
 );
   
-  const handleSubmit = () => {
-    usersPost.EditCurrentPost(newPost.value);
+  const handleSubmit = async () => {
+    await usersPost.EditCurrentPost(newPost.value);
     handleClose();
     window.location.reload(); // Submit the form and reload the page
   };

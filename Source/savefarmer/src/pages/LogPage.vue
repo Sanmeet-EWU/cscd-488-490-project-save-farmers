@@ -67,7 +67,7 @@ const rememberMe = ref(false);
 
 const handleLogin = async () => {
   try {
-    const response = await axios.post('https://localhost:7170/api/login', {
+    const response = await axios.post('https://farmerapi20250306133102-b8ejbnf8c4a0hve5.westus-01.azurewebsites.net/api/login', {
       email: email.value,
       password: password.value
     });

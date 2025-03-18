@@ -74,7 +74,7 @@ onMounted(() => {
       datasets: [
         {
           label: 'App Progress',
-          data: [0, 50], // The progress is at 50% for now
+          data: [0, 100], // The progress is at 50% for now
           borderColor: '#4caf50',
           backgroundColor: 'rgba(76, 175, 80, 0.2)',
           tension: 0.3,

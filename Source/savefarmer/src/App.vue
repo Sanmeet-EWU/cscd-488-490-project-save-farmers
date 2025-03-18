@@ -4,7 +4,7 @@
       <ion-menu content-id="main-content" type="reveal">
         <ion-content>
           <ion-list id="inbox-list">
-            <ion-list-header>Button list</ion-list-header>
+            <ion-list-header>Save Farmer Menu</ion-list-header>
 
             <ion-menu-toggle aria-hidden="true" :auto-hide="false" v-for="(p, i) in appPages" :key="i">
               <ion-item @click="selectedIndex = i" router-direction="root" :router-link="p.url" lines="none" :detail="false" class="hydrated" :class="{ selected: selectedIndex === i }">
@@ -32,7 +32,7 @@
               Sign Up <ion-icon size="large" :icon="personAddOutline"></ion-icon>
             </ion-button>
           </div>
-          <div v-else>
+          <div v-else-if="whatUser()">
             <ion-button fill="outline" @click="openModal"> 
               Create Post <ion-icon size="large" :icon="addOutline"></ion-icon>
             </ion-button>
@@ -43,6 +43,15 @@
               <ion-icon size="large" :icon="logOutOutline"></ion-icon>
             </ion-button>
           </div>
+          <div v-else>
+            <ion-button shape="round" slot="end" @click="checkUser">
+              <ion-icon size="large" :icon="personCircleOutline"></ion-icon>
+            </ion-button>
+            <ion-button shape="round" slot="end" @click="logOut">
+              <ion-icon size="large" :icon="logOutOutline"></ion-icon>
+            </ion-button>
+          </div>
+
             </ion-buttons>
           </ion-toolbar>
         </ion-header>
@@ -108,6 +117,11 @@ const checkAuth = () => {
   return token != null && token !== undefined;
 };
 
+const whatUser = () => {
+  const roles = sessionStorage.getItem('Role');
+  return roles != null && roles !== undefined && roles === 'Farmer' || roles === 'Admin';
+};
+
 const checkUser = () => {
   const id = sessionStorage.getItem('Id');
   if (id != null || id != undefined) {
@@ -138,60 +152,60 @@ const logOut = () => {
   }
 };
 
+const role = sessionStorage.getItem('Role');
 
 const selectedIndex = ref(0);
 // Temporary and can be moved later
 const appPages = [
-{
-    title: 'Home',
-    url: '/Home',
-    iosIcon: homeOutline,
-    mdIcon: homeSharp,
-  },
-  {
-    title: 'Login',
-    url: '/Login',
-    iosIcon: logInOutline,
-    mdIcon: logInSharp,
-  },
-  {
-    title: 'Profile',
-    url: '/Profile',
-    iosIcon: personCircleOutline,
-    mdIcon: personCircleSharp,
-  },
-  // {
-  //   title: 'database',
-  //   url: '/database',
-  //   iosIcon: personCircleOutline,
-  //   mdIcon: personCircleSharp,
-  // },
-  {
-    title: 'Sign Up',
-    url: '/SignUp',
-    iosIcon: personAdd,
-    mdIcon: personAddOutline,
-  },
+  ...(role ? [
+    {
+      title: 'Home',
+      url: '/Home',
+      iosIcon: homeOutline,
+      mdIcon: homeSharp,
+    },
+    {
+      title: 'Profile',
+      url: '/Profile',
+      iosIcon: personCircleOutline,
+      mdIcon: personCircleSharp,
+    },
+    ...(role === 'Admin' ? [
+      {
+        title: 'Admin',
+        url: '/AdminPage',
+        iosIcon: trashOutline,
+        mdIcon: trashSharp,
+      }
+    ] : []),
+  ] : [
+    // {
+    //   title: 'Home',
+    //   url: '/Home',
+    //   iosIcon: homeOutline,
+    //   mdIcon: homeSharp,
+    // },
+    {
+      title: 'Login',
+      url: '/Login',
+      iosIcon: logInOutline,
+      mdIcon: logInSharp,
+    },
+    {
+      title: 'Sign Up',
+      url: '/SignUp',
+      iosIcon: personAdd,
+      mdIcon: personAddOutline,
+    }
+  ]),
   {
     title: 'About',
     url: '/About',
     iosIcon: archiveOutline,
     mdIcon: archiveSharp,
   },
-  // {
-  //   title: 'Trash',
-  //   url: '/Trash',
-  //   iosIcon: trashOutline,
-  //   mdIcon: trashSharp,
-  // },
-  {
-    title: 'Admin',
-    url: '/AdminPage',
-    iosIcon: trashOutline,
-    mdIcon: trashSharp,
-  }
-  
 ];
+
 
 const path = window.location.pathname.split('/')[1];
 if (path !== undefined) {
@@ -204,6 +218,12 @@ if (path !== undefined) {
 .PostButton {
   background: antiquewhite;
   color: red;
+}
+
+ion-list-header {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  color: #777e85;
 }
 
 ion-menu ion-content {

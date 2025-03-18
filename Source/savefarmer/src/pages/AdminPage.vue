@@ -86,7 +86,7 @@ async function getData() {
     const acTo = checkUser();
     axios.defaults.headers.common["Authorization"] = `Bearer ${acTo}`;
 
-    const response = await axios.get("https://localhost:7170/api/current-user");
+    const response = await axios.get("https://farmerapi20250306133102-b8ejbnf8c4a0hve5.westus-01.azurewebsites.net/api/current-user");
     return response.data;
   } catch (error) {
     console.error("Error fetching user data:", error);
@@ -121,14 +121,14 @@ onMounted(async () => {
   const acTo = checkUser();
   axios.defaults.headers.common["Authorization"] = `Bearer ${acTo}`;
 
-  const userResponse = await axios.get("https://localhost:7170/api/GetAllUsers");
+  const userResponse = await axios.get("https://farmerapi20250306133102-b8ejbnf8c4a0hve5.westus-01.azurewebsites.net/api/GetAllUsers");
   console.log("User Data:", userResponse.data);
   const userAmount = userResponse.data.length;
 
   const farmers = userResponse.data.filter((user: any) => user.role === "Farmer").length;
   const buyers = userResponse.data.filter((user: any) => user.role === "Buyer").length;
 
-  const postResponse = await axios.get("https://localhost:7170/api/posts/analytic");
+  const postResponse = await axios.get("https://farmerapi20250306133102-b8ejbnf8c4a0hve5.westus-01.azurewebsites.net/api/posts/analytic");
   console.log("Post Data:", postResponse.data);
   const postAmount = postResponse.data.length;
 

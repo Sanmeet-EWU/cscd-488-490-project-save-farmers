@@ -33,7 +33,7 @@ export default class PostService {
 
   async fetchPosts(): Promise<void> {
     try {
-      const response = await axios.get("https://localhost:7170/api/posts");
+      const response = await axios.get("https://farmerapi20250306133102-b8ejbnf8c4a0hve5.westus-01.azurewebsites.net/api/posts");
       if (response.status === 200) {
         this.posts.value = response.data;
       }
@@ -60,7 +60,7 @@ export default class PostService {
       console.log(post);
 
       
-      const response = await axios.post("https://localhost:7170/api/posts", {
+      const response = await axios.post("https://farmerapi20250306133102-b8ejbnf8c4a0hve5.westus-01.azurewebsites.net/api/posts", {
         title: post.title,
         price: post.price,
         cropType: post.cropType,
@@ -68,12 +68,15 @@ export default class PostService {
         location: post.location,
         contact: post.contact,
         description: post.description,
-        expireDate: this.convertExpireDate(post.expireDate),
+        expireDate: post.expireDate,
         name: post.name,
         status: post.status,
         userId: post.userId,
-      }
-    );
+      });
+
+      
+
+
       if (response.status === 201) {
         this.posts.value.push(response.data);
       }
@@ -88,6 +91,7 @@ export default class PostService {
     }
   }
 
+
   
   // Function to delete a post by its index
   deletePost(index: number): void {
@@ -98,16 +102,6 @@ export default class PostService {
   formatContact(contact: string): string {
     return contact.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3");
   }
-
-  convertExpireDate = (expireValue: any): string => {
-    if (typeof expireValue === 'number') {
-      const newDate = new Date();
-      newDate.setDate(newDate.getDate() + expireValue);
-      newDate.setHours(0, 0, 0, 0);
-      return newDate.toISOString();
-    }
-    return expireValue;
-  };
 
   // Function to get the crop icon URL based on crop type
   getCropIcon(cropType: string | undefined | null): string {

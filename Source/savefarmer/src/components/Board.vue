@@ -58,8 +58,8 @@
           <div v-if="isMobileWidth">
             <ion-card-content>
               <div class="info-header">
-                <span><strong>Price: ${{ post.price }}</strong></span>
                 <span><strong>Produce: {{ post.cropType }}</strong></span>
+                <span><strong>Price: ${{ post.price }}</strong></span>
                 <span><strong>Amount: {{ post.amount }}</strong></span>
                 <span><strong>Vendor: {{ post.userId }}</strong></span>
                 <span><strong>Location: {{ post.location }}</strong></span>
@@ -73,23 +73,24 @@
           <div v-else>
             <ion-card-content>
               <div class="info-header">
-                <span><strong>Price:</strong></span>
                 <span><strong>Produce:</strong></span>
+                <span><strong>Price:</strong></span>
                 <span><strong>Location:</strong></span>
                 <span><strong>Contact:</strong></span>
               </div>
               <div class="info-details">
-                <span>${{ post.price }}</span>
                 <span>{{ post.cropType }}</span>
+                <span>${{ post.price }}</span>
                 <span>{{ post.location }}</span>
                 <span>{{ postSer.formatContact(post.contact) }}</span>
               </div>
               <div class="info-2details">
+                <span>{{ post.amount }}</span>
                 <span class="date-column">
                   <div>Date Listed:</div>
                   <div>{{ formatDate(post.createDate) }}</div>
                 </span>
-                <span>{{ post.amount }}</span>
+                <span></span>
                 <span>{{ post.name }}</span>
               </div>
               <p class="expiry-date"><strong>Expires:</strong> {{ formatDate(post.expireDate) }}</p>

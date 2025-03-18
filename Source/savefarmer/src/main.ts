@@ -61,7 +61,7 @@ const refreshAccessToken = async () => {
   if (token) {
     try {
       const response = await Axios.post(
-        "https://localhost:7170/api/refresh-token",
+        "https://farmerapi20250306133102-b8ejbnf8c4a0hve5.westus-01.azurewebsites.net/api/refresh-token",
         {
           refreshToken: token,
         }
