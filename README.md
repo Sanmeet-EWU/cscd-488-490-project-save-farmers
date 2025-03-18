@@ -149,6 +149,6 @@ dotnet ef database update
 - Introduce automated backend testing.
 
 ---
-For more information: [documentation/SaveFarmers_FinalReport.pdf]
+For more information: [SaveFarmers Final Report](documentation/SaveFarmers_FinalReport.pdf)
 ---
 [GitHub Repository](https://github.com/Sanmeet-EWU/cscd-488-490-project-save-farmers/)
