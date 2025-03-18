@@ -27,7 +27,10 @@
    git clone https://github.com/Sanmeet-EWU/cscd-488-490-project-save-farmers/
    cd savefarmer && yarn install && ionic serve
    ```
-
+3. If you want to run the app locally:
+   ```sh
+   npm run dev
+   ```
 ## Code Editing
 Open the entire folder in Visual Studio Code. Ensure you have the Vue, TypeScript, and Ionic extensions installed to edit the code within the `src` folder.
 
